@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    <div class="galaxy">
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>-->
+    <audio id="audio1" style="display: none;"><source src="silence.mp3" type="audio/mp3"></audio>
+    <audio id="audio2" style="display: none;"><source src="inicio.mp3" type="audio/mp3"></audio>
+    <audio id="audio3" style="display: none;"><source src="WhatsApp-Audio-2022-11-17-at-17.07.54.mp3" type="audio/mp3"></audio>
+    <audio id="audio4" style="display: none;"><source src="mixkit-intro-transition-1146.wav" type="audio/mp3"></audio>
+    <audio id="audio5" style="display: none;"><source src="mixkit-small-group-cheer-and-applause-518.wav" type="audio/mp3"></audio>
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+    <div class="container">
+        <form>
+          <div class="formulario form-step-active">
+
+          </div>
+          <div class="formulario ">
+            <input type="name" placeholder="Nome Completo" id="nome" ><br>
+            <input type="email" placeholder="E-mail" id="email" ><br>
+            <input type="phone" placeholder="Telefone" id="phone" ><br>
+          </div>
+          <div class="formulario">
+            <input type="text" placeholder="Nome da empresa/negócio" id="empresa" ><br>
+          </div>
+          <div class="formulario">
+            <input type="text" placeholder="Fale-nos sobre seu negócio" id="sobre" ><br>
+          </div>
+          <div class="formulario">
+            <input type="text" placeholder="Onde é sua empresa" id="cidade" ><br>
+            <input type="button" value="Enviar" id="button">
+          </div>
+
+      
+      <div id="progress-bar">
+    <span class="step active"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+
+      </div>  </form>
+      <div class="botoes">
+      <button id="progress-prev" class="btn" style="visibility: hidden;" >Voltar</button>
+      <button id="progress-next" class="btn">Próximo</button>
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="  crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
